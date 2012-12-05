@@ -79,10 +79,7 @@ public class UserView extends ViewImpl implements UserPresenter.MyView {
      
     @UiField
     TextButton delete;
-    
-    @UiField
-    TextButton key;
-    
+        
     UserProxy user;
 
 	@Inject
@@ -178,17 +175,14 @@ public class UserView extends ViewImpl implements UserPresenter.MyView {
              if(size == 0){     
                edit.setEnabled(false);
                delete.setEnabled(false);
-               key.setEnabled(false);
                user = null;
              }else if(size == 1){      
                edit.setEnabled(true);
                delete.setEnabled(true);
-               key.setEnabled(true);
                user = event.getSelection().get(0);
              }else if(size > 1){
                edit.setEnabled(false);
                delete.setEnabled(true);
-               key.setEnabled(false);
                user = null;
              }       
               

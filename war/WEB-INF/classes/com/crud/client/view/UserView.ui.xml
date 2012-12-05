@@ -19,17 +19,15 @@
     </ui:with>
     
     <gxt:ContentPanel headerVisible="false" borders="false" bodyBorder="false" >
-      <gxt:ContentPanel ui:field="panel" headingText="Usuarios" >
+      <gxt:ContentPanel ui:field="panel" headingText="Users" >
         <container:VerticalLayoutContainer>
           <container:child layoutData="{verticalLayoutData}">
             <toolbar:ToolBar ui:field="toolBar">
-              <button:TextButton text="Agregar" ui:field="add" icon="{resources.add}" />
+              <button:TextButton text="Add" ui:field="add" icon="{resources.add}" />
               <toolbar:SeparatorToolItem />
-              <button:TextButton text="Editar" ui:field="edit" icon="{resources.edit}" enabled="false" />
+              <button:TextButton text="Edit" ui:field="edit" icon="{resources.edit}" enabled="false" />
               <toolbar:SeparatorToolItem />
-              <button:TextButton text="Eliminar" ui:field="delete" icon="{resources.delete}" enabled="false" />
-              <toolbar:SeparatorToolItem />
-              <button:TextButton text="Cambiar Clave" ui:field="key" icon="{resources.key}" enabled="false" />
+              <button:TextButton text="Delete" ui:field="delete" icon="{resources.delete}" enabled="false" />
             </toolbar:ToolBar>
           </container:child>
           <container:child layoutData="{centerLayoutData}" >
