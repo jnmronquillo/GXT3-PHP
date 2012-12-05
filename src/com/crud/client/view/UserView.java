@@ -132,9 +132,9 @@ public class UserView extends ViewImpl implements UserPresenter.MyView {
         final CheckBoxSelectionModel<UserProxy> sm = new CheckBoxSelectionModel<UserProxy>(identity);
         sm.setSelectionMode(SelectionMode.MULTI);
         
-        ColumnConfig<UserProxy, String> usuarioColumn = new ColumnConfig<UserProxy, String>(props.login(), 80, "Usuario");
-        ColumnConfig<UserProxy, String> nombresColumn = new ColumnConfig<UserProxy, String>(props.first(), 150, "Nombres");
-        ColumnConfig<UserProxy, String> apellidosColumn = new ColumnConfig<UserProxy, String>(props.last(), 150, "Apellidos");
+        ColumnConfig<UserProxy, String> usuarioColumn = new ColumnConfig<UserProxy, String>(props.login(), 80, "User Name");
+        ColumnConfig<UserProxy, String> nombresColumn = new ColumnConfig<UserProxy, String>(props.first(), 150, "First Name");
+        ColumnConfig<UserProxy, String> apellidosColumn = new ColumnConfig<UserProxy, String>(props.last(), 150, "Last Name");
          
         List<ColumnConfig<UserProxy, ?>> l = new ArrayList<ColumnConfig<UserProxy, ?>>();
         l.add(sm.getColumn());
