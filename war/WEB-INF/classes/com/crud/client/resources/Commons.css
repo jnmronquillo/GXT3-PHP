@@ -1,0 +1,59 @@
+
+@sprite .layout-header {
+	/*background: url("images/icons/bg.gif") repeat-x scroll 0 50% #1E4176;*/
+	gwt-image: 'bg';	
+	background-repeat: repeat-x;
+	background-attachment: scroll;
+	background-position: 0 50%;
+	background-color: #1E4176;	
+	height: 35px;
+	padding-left: 3px;
+}
+
+.layout-title {
+	float:left;
+    color: white;
+    font: 16px tahoma,arial,sans-serif;
+    padding: 6px 0 8px 6px;
+}
+
+.logout {
+	float:right;	
+}
+
+.underline { 
+    color: white; 
+    text-decoration: underline; 
+} 
+.underline a { 
+    color: white; 
+    text-decoration: none; 
+}
+.button{
+	display:block;
+	margin-right: 20px;
+}
+
+@sprite .exit{
+	color: white;
+	padding: 8px 0 8px 0;
+    font: 12px tahoma,arial,sans-serif;
+    font-weight:bold;    
+    /*background:url(images/icons/exit.png) no-repeat 10px 8px;*/    
+    gwt-image: 'exit';
+    background-repeat: no-repeat;
+    background-position: 10px 8px;	
+	width: auto;
+	text-indent:30px;
+	display:block;
+}
+
+/*gif loader*/
+.busy-indicator{
+        background-color: white;
+        font-size: 12px;
+        font-weight: bold;
+        text-align: center;
+        padding-top: 3px;
+        margin-left: 190px;
+}

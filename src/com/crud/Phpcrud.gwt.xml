@@ -1,0 +1,25 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<module rename-to='phpcrud'>
+	<!-- Inherit the core Web Toolkit stuff.                        -->
+	<inherits name='com.google.gwt.user.User'/>
+	<inherits name='com.google.gwt.inject.Inject'/>
+	<inherits name='com.google.gwt.resources.Resources'/>
+
+	<!-- Other module inherits                                      -->
+	<inherits name='com.gwtplatform.mvp.Mvp'/>
+	<inherits name='com.gwtplatform.dispatch.Dispatch'/>
+	<inherits name="com.google.web.bindery.autobean.AutoBean"/>
+	<inherits name='com.sencha.gxt.ui.GXT'/>
+	
+
+	<!-- Specify the app entry point class.                         -->
+	<entry-point class='com.crud.client.Phpcrud'/>
+
+	<!-- Specify the paths for translatable code                    -->
+	<source path='client'/>
+	<source path='shared'/>
+
+	<define-configuration-property name='gin.ginjector' is-multi-valued='false' />
+	<set-configuration-property name='gin.ginjector' value='com.crud.client.gin.ClientGinjector' />
+
+</module>

@@ -1,0 +1,6 @@
+/* Add css rules here for your application. */
+
+@import url("reset.css");
+* {
+font-family: arial, helvetica, tahoma, sans-serif;
+}
